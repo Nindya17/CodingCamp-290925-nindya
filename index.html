@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>To Do List</title>
+
     <link rel="stylesheet" href="css/stylecss.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Nindya To Do List</h1>
-        <form id="todo-form">
-            <input type="text" id="task-input" placeholder="Add a task...." required>
-            <input type="date" id="date-input" required>
-            <button type="submit">+</button>
-    </form>
-
-    <ul id="todo-list"></ul>
-    </div>
-
+    <header>
+        <h1 class="text-3xl font-bold">Nindya To Do List</h1>
+    </header>
+<br>
+    <main>
+        <section>
+            <form id="todo-form">
+                <input type="text" class="bg-white-500 text-gray" id="todo-input" placeholder="Add your task ...." required>
+                <input type="date" id="todo-date" required>
+                <button type="submit">Add</button>
+            </form>
+        </section>
+        <section>
+            <button class="bg-blue-500 text-white">Delete All</button>
+            <button class="bg-blue-500 text-white">Filter</button>
+        </section>
+        <section>
+            <ul id="todo-list" class="mt-4">
+                <p class="text-center text-gray-500">No todos yet. Add one above!</p>
+            </ul>
+        </section>
+    </main>
+<br>
+    <footer>
+        <p>&copy; 2025 Nindya To Do App</p>
+    </footer>
+    
     <script src="js/script.js"></script>
 </body>
 </html>
